@@ -1,5 +1,5 @@
 # Gobang
-C++ pratice program：gobang game
+C++ pratice program：五子棋
 ## Features
 Support human VS machine, human VS human
 ## IDE
