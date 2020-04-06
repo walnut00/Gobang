@@ -5,4 +5,4 @@ C++练手程序：五子棋游戏
 ## 开发工具
 Visual Studio。
 
-![image](https://github.com/walnut00/resources/blob/master/gobang.gif)
+![image](https://github.com/walnut00/Gobang/blob/master/gobang.gif)
