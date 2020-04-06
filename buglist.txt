@@ -1,0 +1,2 @@
+22:18 2011-2-28	how to hightlight the last step chessman? ==> okay, use thread to check the step stations, auto hightlight the last step, aotu unhightligjt opponent's last step
+23:46 2011-3-4	the hightlight thread is stop working when user request step back ==> okay get the hightlight point when hightlight or unhightlight, the hightlight and unhightlight function return true when get false toe check whether the point is steped

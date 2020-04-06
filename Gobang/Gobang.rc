@@ -1,0 +1,275 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Gobang.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON                    "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GOBANG_DIALOG DIALOGEX 0, 0, 524, 401
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gobang"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "游戏",IDC_STATIC_GAME,452,237,65,140
+    PUSHBUTTON      "开始",IDC_BUTTON_START_GAME,458,317,50,14
+    PUSHBUTTON      "认输",IDC_BUTTON_GIVE_UP,458,336,50,14,WS_DISABLED
+    PUSHBUTTON      "悔棋",IDC_BUTTON_STEP_BACK,458,353,50,14,WS_DISABLED
+    LTEXT           "白方",IDC_STATIC,460,251,17,8
+    CTEXT           "00:00:00",IDC_STATIC_TIME_WHITE,478,251,32,9
+    LTEXT           "黑方",IDC_STATIC,460,265,17,8
+    CTEXT           "00:00:00",IDC_STATIC_TIME_BLACK,478,265,32,9
+    LTEXT           "白方",IDC_STATIC,460,283,17,8
+    LTEXT           "黑方",IDC_STATIC,460,295,17,8
+    CTEXT           "0",IDC_STATIC_COUNT_BLACK,482,295,19,8
+    CTEXT           "0",IDC_STATIC_COUNT_WHITE,482,283,19,8
+    GROUPBOX        "状态",IDC_STATIC_STATUS,452,15,65,32
+    CTEXT           "未开始游戏",IDC_STATIC_SHOW_STATUS,453,29,62,9
+    GROUPBOX        "棋子",IDC_STATIC_CHESSMAN_COLOR,452,53,65,63
+    CTEXT           "-",IDC_STATIC_OPPONENT_NAME,481,71,34,10
+    CTEXT           "-",IDC_STATIC_PLAYER_NAME,481,95,34,10
+END
+
+IDD_CONFIG_DIALOG DIALOGEX 0, 0, 141, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "完成",IDC_BUTTON_FINISH,7,95,38,14
+    GROUPBOX        "棋子颜色",IDC_STATIC_CHESSMAN_COLOR,75,7,59,36
+    CONTROL         "执白",IDC_RADIO_CHESSMAN_WHITE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,91,18,29,9
+    CONTROL         "执黑",IDC_RADIO_CHESSMAN_BLACK,"Button",BS_AUTORADIOBUTTON,91,30,29,9
+    GROUPBOX        "游戏模式",IDC_STATIC_GAME_MODE,7,7,59,36
+    CONTROL         "人机模式",IDC_RADIO_MODE_SINGLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,18,44,9
+    CONTROL         "双人模式",IDC_RADIO_MODE_DOUBLE,"Button",BS_AUTORADIOBUTTON,16,30,43,9
+    PUSHBUTTON      "设置",IDC_BUTTON_SET_BACKGROUND_COLOR,93,56,32,12
+    GROUPBOX        "其他",IDC_STATIC_OTHERS,7,47,127,45
+    LTEXT           "玩 家  姓 名",IDC_STATIC_PLAYER_NAME,17,77,41,8
+    EDITTEXT        IDC_EDIT_PLAYER_NAME,61,75,64,13,ES_AUTOHSCROLL
+    LTEXT           "棋盘背景色",IDC_STATIC_CHESSBOARD_COLOR,17,59,41,8
+    CONTROL         "",IDC_STATIC_BACKGROUND_COLOR,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,61,56,29,13
+    PUSHBUTTON      "应用",IDC_BUTTON_APPLY,95,95,38,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCLE,51,95,38,14
+END
+
+IDD_REQUEST_DIALOG DIALOGEX 0, 0, 178, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "请输入请求信息：",IDC_STATIC_MESSAGE,7,7,164,75
+    EDITTEXT        IDC_EDIT_MESSAGE,15,17,148,59,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "发送请求",IDC_BUTTON_SEND,7,85,46,14
+    PUSHBUTTON      "继续游戏",IDC_BUTTON_CANCEL,125,85,46,14
+    PUSHBUTTON      "强制退出",IDC_BUTTON_FORCE,66,85,46,14
+END
+
+IDD_CUPMUTER_LEVEL_DIALOG DIALOGEX 0, 0, 114, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置电脑级别"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "电脑级别",IDC_STATIC_SINGLE_CONFIG,7,7,100,54
+    CONTROL         "容易(初学者可选此)",IDC_RADIO_EASY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,19,82,10
+    CONTROL         "困难(有可能会获胜)",IDC_RADIO_HARD,"Button",BS_AUTORADIOBUTTON,18,33,82,10
+    CONTROL         "专家(一般人都会输)",IDC_RADIO_EXPERT,"Button",BS_AUTORADIOBUTTON,18,47,82,10
+    DEFPUSHBUTTON   "确定",IDOK,29,65,36,12
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCLE,71,65,36,12
+END
+
+IDD_DOUBLE_CONFIG_DIALOG DIALOGEX 0, 0, 134, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "双人模式配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "服务器模式",IDC_CHECK_SERVER_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,55,54,10
+    GROUPBOX        "网络配置",IDC_STATIC_DOUGLE_CONFIG,7,7,120,61
+    LTEXT           "IP地址",IDC_STATIC_IP,14,21,24,8
+    LTEXT           "端   口",IDC_STATIC_PORT,14,39,23,8
+    CONTROL         "",IDC_IPADDRESS_SERVER,"SysIPAddress32",WS_TABSTOP,39,18,82,13
+    EDITTEXT        IDC_EDIT_PORT,39,36,82,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,49,72,35,12
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCLE,92,72,35,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Neil"
+            VALUE "FileDescription", "Gobang Game"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Gobang.exe"
+            VALUE "LegalCopyright", "(C) Neil Yang All Rights Reserved"
+            VALUE "OriginalFilename", "Gobang.exe"
+            VALUE "ProductName", "五子棋VC版(开发平台VisualStudio2005)"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GOBANG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 517
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDD_CONFIG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_REQUEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_CUPMUTER_LEVEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DOUBLE_CONFIG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Gobang.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

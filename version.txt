@@ -1,0 +1,2 @@
+Gobang Game 1.2.2	1:01 2011-3-6	Add hightlight last step function
+Gobang Game 2.0.0	21:53 2013/2/26	优化分数评审算法
