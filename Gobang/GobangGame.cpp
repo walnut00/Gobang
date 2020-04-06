@@ -2665,7 +2665,7 @@ void CGobangGame::Analyze(const CPlayer * pPlayer,  int * pSocre, CPoint * pPoin
 			}
 
 			#ifdef _DEBUG
-				this->WriteSocre(nPointSocre, x == rectBoard.right);	//for debug			
+				// this->WriteSocre(nPointSocre, x == rectBoard.right);	//for debug			
 			#endif
 		}	
 	}
