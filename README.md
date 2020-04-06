@@ -1,8 +1,8 @@
 # Gobang
-C++练手程序：五子棋游戏
-## 实现
-支持人机对战、双人网络对战。
-## 开发工具
-Visual Studio。
+C++ pratice program：gobang game
+## Features
+Support human VS machine, human VS human
+## IDE
+Visual Studio
 
 ![image](https://github.com/walnut00/Gobang/blob/master/gobang.gif)
